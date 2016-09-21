@@ -72,33 +72,6 @@ figure.show {
     cursor: pointer;
 }
 
-button.toGallery {
-    background-color: transparent;
-    border-top: 0.3rem solid #ffffff;
-    border-left: 0.3rem solid #ffffff;
-    border-bottom: 0.3rem solid #ffffff;
-    border-right: 0.3rem solid #ffffff;
-    border-radius: 25px;
-    display: inline-block;
-    color: #ffffff;
-    padding: 0 2rem;
-    position: relative;
-    letter-spacing: 0.1rem;
-    line-height: 2;
-    font-size: 0.8em;
-    font-weight: 600;
-    bottom: 0;
-}
-
-button.toGallery:hover {
-    background-color: white;
-    border-top: 0.3rem solid black;
-    border-left: 0.3rem solid black;
-    border-bottom: 0.3rem solid black;
-    border-right: 0.3rem solid black;
-    color: black;
-}
-
 
 /*-----------------------------------------------------*/
 
@@ -134,7 +107,7 @@ img.bio_3box {
 
 .bioTextWrapper {
     width: 100%;
-    height: auto;
+    height: 870px;
     margin: 0;
     padding-left: 25%;
     padding-right: 25%;
@@ -145,7 +118,7 @@ img.bio_3box {
     font-size: 1.7em;
     color: black;
     position: absolute;
-    top: 2em;
+    top: 5%;
 }
 
 div.bioTitle {
@@ -181,17 +154,24 @@ div.bioDescription {
     position: absolute;
     top: 42em;
     left: 25.6%;
+    z-index: 9999;
+
 }
+
+
 
 .box {
     width: 250px;
     height: 250px;
-    /*  border: 1px solid black;*/
+    /* border: 1px solid black; */
     text-align: center;
     line-height: 250px;
     cursor: pointer;
-    overflow: hidden;
+     overflow: hidden; 
     color: black;
+    position: relative;
+
+
 }
 
 .box img {
@@ -199,90 +179,144 @@ div.bioDescription {
     height: 100%;
     position: relative;
     transform: scale(1);
+
 }
 
-img.galleryImg.Animate {
-    transition: .4s ease-in-out;
-    transform: scale(1.8);
-}
 
-img.galleryImg.AnimateOut {
-    transition: .4s ease-out;
-    transform: scale(1);
-}
-
-img.sketchImg.Animate {
-    transition: .4s ease-in-out;
-    transform: scale(1.8);
-}
-
-img.sketchImg.AnimateOut {
-    transition: .4s ease-out;
-    transform: scale(1);
-}
-
-img.websiteImg.Animate {
-    transition: .4s ease-in-out;
-    transform: scale(1.8);
-}
-
-img.websiteImg.AnimateOut {
-    transition: .4s ease-out;
-    transform: scale(1);
-}
 
 .galleryTitle {
     position: relative;
-    top: -2em;
-    font-size: 2.5em;
-    font-family: 'Jura', sans-serif;
-    font-weight: 600;
+    top: 0em;
+
+               -webkit-filter: blur(3px);
+
+    
 }
 
-.galleryTitle.Animate {
-    transition: .4s ease-in-out;
-    top: -7em;
+.galleryTitle:hover {
+-webkit-filter: blur(0px);
 }
 
-.galleryTitle.AnimateOut {
-    transition: .2s ease-out;
-    top: -2em;
-}
 
 .sketchTitle {
     position: relative;
-    top: -2em;
-    font-size: 2.5em;
-    font-family: 'Jura', sans-serif;
-    font-weight: 600;
+    top: 0em;
+
+    -webkit-filter: blur(3px);
+
 }
 
-.sketchTitle.Animate {
-    transition: .4s ease-in-out;
-    top: -7em;
-}
-
-.sketchTitle.AnimateOut {
-    transition: .2s ease-out;
-    top: -2em;
+.sketchTitle:hover {
+-webkit-filter: blur(0px);
 }
 
 .websiteTitle {
     position: relative;
-    top: -2em;
-    font-size: 2.5em;
-    font-family: 'Jura', sans-serif;
+   top: 0em;
+
+    -webkit-filter: blur(3px);
+
+}
+.websiteTitle:hover {
+-webkit-filter: blur(0px);
+}
+
+
+
+div.toGallery {
+    background: transparent;
+    border-top: 0.3rem solid black;
+    border-left: 0.3rem solid black;
+    border-bottom: 0.3rem solid black;
+    border-right: 0.3rem solid black;
+    border-radius: 25px;
+    display: inline-block;
+    color: black;
+    padding: 0 2rem;
+    position: relative;
+    letter-spacing: 0.1rem;
+    line-height: 2;
+    font-size: 1.3em;
     font-weight: 600;
+    bottom: 0;
+    cursor: pointer;
 }
 
-.websiteTitle.Animate {
-    transition: .4s ease-in-out;
-    top: -7em;
+
+div.galleryBtn.homeToGallery {
+
+    position: absolute;
+    color: white;
+    font-size: 1em;
+    bottom: 0;
+    right: 0;
+     border: 0.3rem solid white;
+         border-radius: 25px;
+
+}
+div.toGallery:hover {
+    background: url('img/mobile/1.jpg') 0 0 no-repeat;
+    border-top: 0.3rem solid black;
+    border-left: 0.3rem solid black;
+    border-bottom: 0.3rem solid black;
+    border-right: 0.3rem solid black;
+    color: black;
 }
 
-.websiteTitle.AnimateOut {
-    transition: .2s ease-out;
-    top: -2em;
+div.toSketch {
+    background-color: transparent;
+    border-top: 0.3rem solid black;
+    border-left: 0.3rem solid black;
+    border-bottom: 0.3rem solid black;
+    border-right: 0.3rem solid black;
+    border-radius: 25px;
+    display: inline-block;
+    color: black;
+    padding: 0 2rem;
+    position: relative;
+    letter-spacing: 0.1rem;
+    line-height: 2;
+    font-size: 1.3em;
+    font-weight: 600;
+    bottom: 0;
+    cursor: pointer;
+}
+
+div.toSketch:hover {
+    background-color: white;
+    border-top: 0.3rem solid black;
+    border-left: 0.3rem solid black;
+    border-bottom: 0.3rem solid black;
+    border-right: 0.3rem solid black;
+    color: black;
+}
+
+div.toAboutMe {
+    background-color: transparent;
+    border-top: 0.3rem solid black;
+    border-left: 0.3rem solid black;
+    border-bottom: 0.3rem solid black;
+    border-right: 0.3rem solid black;
+    border-radius: 25px;
+    display: inline-block;
+    color: black;
+    padding: 0 2rem;
+    position: relative;
+    letter-spacing: 0.1rem;
+    line-height: 2;
+    font-size: 1.3em;
+    font-weight: 600;
+    bottom: 0;
+    cursor: pointer;
+}
+
+div.toAboutMe:hover {
+    background-color: white;
+    border-top: 0.3rem solid black;
+    border-left: 0.3rem solid black;
+    border-bottom: 0.3rem solid black;
+    border-right: 0.3rem solid black;
+    color: black;
 }
 
 
@@ -365,8 +399,7 @@ div.diy-slideshow.aboutMe {
     height: 870px;
     z-index: -1;
     text-align: center;
-    border: 1px solid black;
-    background: lightgrey;
+    background: white;
 }
 
 div.aboutMeWrapper {
@@ -378,6 +411,8 @@ div.aboutMeWrapper {
 
 div.left {
     width: 50%;
+    float: left;
+    text-align: center;
 }
 
 .aboutMebox img {
@@ -385,6 +420,11 @@ div.left {
     height: 100%;
     position: relative;
     transform: scale(1);
+}
+
+div.zanzoImg {
+    height: inherit;
+    margin-top: 51px;
 }
 
 img.aboutMeImg {

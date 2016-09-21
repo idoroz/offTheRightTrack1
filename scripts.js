@@ -72,6 +72,11 @@ $(document).ready(function() {
         return false;
     })
 
+       $('.homePageBtn').on('click', function() {
+        document.location = '#homePage';
+        return false;
+    })
+
 
 
     // init Masonry
@@ -238,50 +243,50 @@ function checkSize() {
 
 //Bio Menu Hover Smoorgasbord
 
-$(".galleryBtn").hover(
-    function() {
-        $(".galleryTitle").removeClass("AnimateOut");
-        $("img.galleryImg").removeClass("AnimateOut");
-        $(".galleryTitle").addClass("Animate");
-        $("img.galleryImg").addClass("Animate");
+// $(".galleryBtn").hover(
+//     function() {
+//         $(".galleryTitle").removeClass("AnimateOut");
+//         $("img.galleryImg").removeClass("AnimateOut");
+//         $(".galleryTitle").addClass("Animate");
+//         $("img.galleryImg").addClass("Animate");
 
-    },
-    function() {
-        $(".galleryTitle").addClass("AnimateOut");
-        $("img.galleryImg").addClass("AnimateOut");
-        $(".galleryTitle").removeClass("Animate");
-        $("img.galleryImg").removeClass("Animate");
-    });
+//     },
+//     function() {
+//         $(".galleryTitle").addClass("AnimateOut");
+//         $("img.galleryImg").addClass("AnimateOut");
+//         $(".galleryTitle").removeClass("Animate");
+//         $("img.galleryImg").removeClass("Animate");
+//     });
 
-$(".sketchBtn").hover(
-    function() {
-        $(".sketchTitle").removeClass("AnimateOut");
-        $("img.sketchImg").removeClass("AnimateOut");
-        $(".sketchTitle").addClass("Animate");
-        $("img.sketchImg").addClass("Animate");
+// $(".sketchBtn").hover(
+//     function() {
+//         $(".sketchTitle").removeClass("AnimateOut");
+//         $("img.sketchImg").removeClass("AnimateOut");
+//         $(".sketchTitle").addClass("Animate");
+//         $("img.sketchImg").addClass("Animate");
 
-    },
-    function() {
-        $(".sketchTitle").addClass("AnimateOut");
-        $("img.sketchImg").addClass("AnimateOut");
-        $(".sketchTitle").removeClass("Animate");
-        $("img.sketchImg").removeClass("Animate");
-    });
+//     },
+//     function() {
+//         $(".sketchTitle").addClass("AnimateOut");
+//         $("img.sketchImg").addClass("AnimateOut");
+//         $(".sketchTitle").removeClass("Animate");
+//         $("img.sketchImg").removeClass("Animate");
+//     });
 
-$(".websiteBtn").hover(
-    function() {
-        $(".websiteTitle").removeClass("AnimateOut");
-        $("img.websiteImg").removeClass("AnimateOut");
-        $(".websiteTitle").addClass("Animate");
-        $("img.websiteImg").addClass("Animate");
+// $(".websiteBtn").hover(
+//     function() {
+//         $(".websiteTitle").removeClass("AnimateOut");
+//         $("img.websiteImg").removeClass("AnimateOut");
+//         $(".websiteTitle").addClass("Animate");
+//         $("img.websiteImg").addClass("Animate");
 
-    },
-    function() {
-        $(".websiteTitle").addClass("AnimateOut");
-        $("img.websiteImg").addClass("AnimateOut");
-        $(".websiteTitle").removeClass("Animate");
-        $("img.websiteImg").removeClass("Animate");
-    });
+//     },
+//     function() {
+//         $(".websiteTitle").addClass("AnimateOut");
+//         $("img.websiteImg").addClass("AnimateOut");
+//         $(".websiteTitle").removeClass("Animate");
+//         $("img.websiteImg").removeClass("Animate");
+//     });
 
 
 
@@ -312,3 +317,6 @@ $('.websiteBtn').on('click', function() {
     return false;
 
 })
+
+
+
