@@ -75,7 +75,7 @@
                     this.enableThumbSwipe();
                 }
 
-                this.thumbClickable = false;
+                this.thumbClickable = true;
             } else {
                 this.thumbClickable = true;
             }

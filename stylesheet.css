@@ -63,6 +63,7 @@ figure.show {
     font-weight: 400;
     color: white;
     font-size: 2em;
+    line-height: 2em;
     cursor: pointer;
 }
 
@@ -70,6 +71,26 @@ figure.show {
     font-size: 2em;
     font-weight: 600;
     cursor: pointer;
+}
+
+.dandoImgWrapper {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+    cursor: pointer;
+    overflow: hidden;
+
+    position: absolute;
+}
+
+.dandoImgWrapper img {
+    width: 63%;
+    height: 100%;
+    left: 1em;
+    top: 0.8em;
+    transform: rotate(90deg);
+    position: absolute;
 }
 
 
@@ -119,6 +140,7 @@ img.bio_3box {
     color: black;
     position: absolute;
     top: 5%;
+    display: none;
 }
 
 div.bioTitle {
@@ -155,23 +177,17 @@ div.bioDescription {
     top: 42em;
     left: 25.6%;
     z-index: 9999;
-
 }
-
-
 
 .box {
     width: 250px;
     height: 250px;
-    /* border: 1px solid black; */
     text-align: center;
     line-height: 250px;
     cursor: pointer;
-     overflow: hidden; 
+    overflow: hidden;
     color: black;
     position: relative;
-
-
 }
 
 .box img {
@@ -179,49 +195,22 @@ div.bioDescription {
     height: 100%;
     position: relative;
     transform: scale(1);
-
 }
-
-
 
 .galleryTitle {
     position: relative;
     top: 0em;
-
-               -webkit-filter: blur(3px);
-
-    
 }
-
-.galleryTitle:hover {
--webkit-filter: blur(0px);
-}
-
 
 .sketchTitle {
     position: relative;
     top: 0em;
-
-    -webkit-filter: blur(3px);
-
-}
-
-.sketchTitle:hover {
--webkit-filter: blur(0px);
 }
 
 .websiteTitle {
     position: relative;
-   top: 0em;
-
-    -webkit-filter: blur(3px);
-
+    top: 0em;
 }
-.websiteTitle:hover {
--webkit-filter: blur(0px);
-}
-
-
 
 div.toGallery {
     background: transparent;
@@ -242,18 +231,16 @@ div.toGallery {
     cursor: pointer;
 }
 
-
 div.galleryBtn.homeToGallery {
-
     position: absolute;
     color: white;
     font-size: 1em;
-    bottom: 0;
+    bottom: -4em;
     right: 0;
-     border: 0.3rem solid white;
-         border-radius: 25px;
-
+    border: 0.3rem solid white;
+    border-radius: 25px;
 }
+
 div.toGallery:hover {
     background: url('img/mobile/1.jpg') 0 0 no-repeat;
     border-top: 0.3rem solid black;
@@ -308,6 +295,7 @@ div.toAboutMe {
     font-weight: 600;
     bottom: 0;
     cursor: pointer;
+    transform: scale(0.7);
 }
 
 div.toAboutMe:hover {
@@ -399,8 +387,6 @@ div.diy-slideshow.aboutMe {
     height: 870px;
     z-index: -1;
     text-align: center;
-    border: 1px solid black;
-
 }
 
 div.aboutMeWrapper {
@@ -467,4 +453,10 @@ div.right h1 {
 
 .socialLink {
     transform: scale(0.3);
+}
+
+
+
+img.lg-object.lg-image {
+    height: 90% !important;
 }
